@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace XrnCourse.FormsHello
 {
@@ -12,6 +7,9 @@ namespace XrnCourse.FormsHello
         public MainPage()
         {
             InitializeComponent();
+
+            var msgService = DependencyService.Get<IMessageService>();
+            lblWelcome.Text = "Hello, " + msgService.GetWelcomeMessage();
         }
     }
 }
