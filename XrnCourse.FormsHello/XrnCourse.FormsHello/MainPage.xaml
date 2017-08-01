@@ -16,5 +16,7 @@
            HorizontalOptions="Center" />
         <Button x:Name="btnAlertPage" Text="Go to alert page" 
                 Clicked="btnAlertPage_Clicked"></Button>
+        <Button x:Name="btnActionSheet" Text="Show action sheet" 
+                Clicked="btnActionSheet_Clicked"></Button>
     </StackLayout>
 </ContentPage>
