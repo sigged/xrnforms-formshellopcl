@@ -14,9 +14,8 @@
            Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-        <Button x:Name="btnAlertPage" Text="Go to alert page" 
-                Clicked="btnAlertPage_Clicked"></Button>
-        <Button x:Name="btnActionSheet" Text="Show action sheet" 
-                Clicked="btnActionSheet_Clicked"></Button>
+        <Button x:Name="btnAlertPage" Text="Go to alert page" Clicked="btnAlertPage_Clicked"></Button>
+        <Button x:Name="btnActionSheet" Text="Show action sheet" Clicked="btnActionSheet_Clicked"></Button>
+        <Button x:Name="btnShowModal" Text="Show modal page"  Clicked="btnShowModal_Clicked"></Button>
     </StackLayout>
 </ContentPage>

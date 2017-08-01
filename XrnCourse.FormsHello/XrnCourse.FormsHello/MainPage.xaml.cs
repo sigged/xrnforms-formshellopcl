@@ -10,6 +10,8 @@ namespace XrnCourse.FormsHello
         {
             InitializeComponent();
 
+            Application.Current.ModalPopped += modalPopped;
+
             var msgService = DependencyService.Get<IMessageService>();
             lblWelcome.Text = "Hello, " + msgService.GetWelcomeMessage();
         }
@@ -38,6 +40,19 @@ namespace XrnCourse.FormsHello
                 await Task.Delay(3000);
                 await DisplayAlert("Wait 3 seconds", "The wait is over.", "Ok");
             }
+        }
+
+        private async void btnShowModal_Clicked(object sender, EventArgs e)
+        {
+            //display ModalPage
+            var modalPage = new ModalPage();
+            await Navigation.PushModalAsync(modalPage, true);
+        }
+
+        private async void modalPopped(object sender, ModalPoppedEventArgs e)
+        {
+            if(e.Modal is ModalPage)
+                await DisplayAlert("Modal Result", $"You entered {(e.Modal as ModalPage).NameEntered}", "I know!");
         }
     }
 }
