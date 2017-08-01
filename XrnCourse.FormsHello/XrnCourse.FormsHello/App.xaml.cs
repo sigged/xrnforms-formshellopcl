@@ -9,12 +9,12 @@ namespace XrnCourse.FormsHello
 {
     public partial class App : Application
     {
-        public App()
-        {
-            InitializeComponent();
-
-            MainPage = new XrnCourse.FormsHello.MainPage();
-        }
+public App()
+{
+    InitializeComponent();
+    //wrap the MainPage in a NavigationPage
+    MainPage = new NavigationPage(new MainPage());
+}
 
         protected override void OnStart()
         {

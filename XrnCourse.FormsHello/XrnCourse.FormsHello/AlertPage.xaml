@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XrnCourse.FormsHello.AlertPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="20, 40, 20, 20"
+                    Android="20, 20, 20, 20"
+                    WinPhone="20, 20, 20, 20" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Label Text="Alert Page" TextColor="#eeff33" 
+                   BackgroundColor="DarkBlue" FontAttributes="Italic" />
+            <Button x:Name="btnPopupHello" Text="Popup hello" 
+                    Clicked="btnPopupHello_Clicked"></Button>
+            <Button x:Name="btnGoBack" Text="Go Back" 
+                    Clicked="btnGoBack_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

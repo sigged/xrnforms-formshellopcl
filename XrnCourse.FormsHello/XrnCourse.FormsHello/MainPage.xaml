@@ -3,10 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XrnCourse.FormsHello"
              x:Class="XrnCourse.FormsHello.MainPage">
-
-	<Label x:Name="lblWelcome"
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="20, 40, 20, 20"
+                    Android="20"
+                    WinPhone="20" />
+    </ContentPage.Padding>
+    <StackLayout HorizontalOptions="FillAndExpand">
+        <Label x:Name="lblWelcome"
            Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-
+        <Button x:Name="btnAlertPage" Text="Go to alert page" 
+                Clicked="btnAlertPage_Clicked"></Button>
+    </StackLayout>
 </ContentPage>
