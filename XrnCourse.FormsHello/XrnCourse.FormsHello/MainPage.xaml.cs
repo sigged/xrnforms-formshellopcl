@@ -51,8 +51,9 @@ namespace XrnCourse.FormsHello
 
         private async void modalPopped(object sender, ModalPoppedEventArgs e)
         {
-            if(e.Modal is ModalPage)
-                await DisplayAlert("Modal Result", $"You entered {(e.Modal as ModalPage).NameEntered}", "I know!");
+            if (e.Modal is ModalPage)
+                await DisplayAlert("Modal Result", 
+                    $"You entered {(e.Modal as ModalPage).NameEntered}",  "I know!");
         }
     }
 }
