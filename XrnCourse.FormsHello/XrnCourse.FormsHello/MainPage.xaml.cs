@@ -55,5 +55,11 @@ namespace XrnCourse.FormsHello
                 await DisplayAlert("Modal Result", 
                     $"You entered {(e.Modal as ModalPage).NameEntered}",  "I know!");
         }
+
+        private async void btnRandomNumber_Clicked(object sender, EventArgs e)
+        {
+            //navigate to RandomNumberPage
+            await Navigation.PushAsync(new RandomNumberPage());
+        }
     }
 }

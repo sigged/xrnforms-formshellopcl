@@ -47,6 +47,9 @@
     <Compile Include="AlertPage.xaml.cs">
       <DependentUpon>AlertPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RandomNumberPage.xaml.cs">
+      <DependentUpon>RandomNumberPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -74,6 +77,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AlertPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RandomNumberPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

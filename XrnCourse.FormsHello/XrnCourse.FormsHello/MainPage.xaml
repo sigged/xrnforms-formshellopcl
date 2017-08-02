@@ -17,5 +17,6 @@
         <Button x:Name="btnAlertPage" Text="Go to alert page" Clicked="btnAlertPage_Clicked"></Button>
         <Button x:Name="btnActionSheet" Text="Show action sheet" Clicked="btnActionSheet_Clicked"></Button>
         <Button x:Name="btnShowModal" Text="Show modal page"  Clicked="btnShowModal_Clicked"></Button>
+        <Button x:Name="btnRandomNumber" Text="Show random number page"  Clicked="btnRandomNumber_Clicked"></Button>
     </StackLayout>
 </ContentPage>
