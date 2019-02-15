@@ -27,6 +27,16 @@ namespace XrnCourse.FormsHello
                 }
             };
             Content = layout;
+
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    Padding = new Thickness(20, 40, 20, 20);
+                    break;
+                default:
+                    Padding = new Thickness(20);
+                    break;
+            }
         }
 
         private async void btnClose_Clicked(object sender, EventArgs e)
