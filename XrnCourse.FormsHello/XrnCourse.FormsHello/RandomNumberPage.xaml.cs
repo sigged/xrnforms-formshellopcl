@@ -31,7 +31,7 @@ namespace XrnCourse.FormsHello
         {
             base.OnAppearing();
             pageVisible = true;
-            Device.StartTimer(TimeSpan.FromMilliseconds(1000), () => GenerateNumber());
+            Device.StartTimer(TimeSpan.FromMilliseconds(1000), GenerateNumber);
         }
 
         protected override void OnDisappearing()
